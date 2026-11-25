@@ -300,35 +300,6 @@ button{font-family:var(--font-body);cursor:pointer;color:white}form button:not([
 (function(){var f=document.querySelector('.scene iframe'),lost=false,retries=0,timer;function fail(){document.documentElement.classList.add('scene-failed')}function startTimer(){clearTimeout(timer);timer=setTimeout(function check(){if(document.hidden){timer=setTimeout(check,5000);return}fail()},120000)}function recover(){if(!lost||document.hidden)return;lost=false;if(retries++>=2){fail();return}document.documentElement.classList.remove('scene-failed');f.src=f.getAttribute('src');startTimer()}window.addEventListener('message',function(e){if(e.origin!==location.origin||e.source!==f.contentWindow)return;if(e.data==='nexhost-3d-ready'){clearTimeout(timer);document.documentElement.classList.remove('scene-failed')}else if(e.data==='nexhost-3d-unavailable')fail();else if(e.data==='nexhost-3d-context-lost'){lost=true;setTimeout(recover,100)}});f.addEventListener('error',fail);document.addEventListener('visibilitychange',recover);window.addEventListener('pageshow',recover);if(matchMedia('(prefers-reduced-motion: reduce)').matches)fail();else {try{var gl=document.createElement('canvas').getContext('webgl2');if(!gl)fail();else{var ex=gl.getExtension('WEBGL_lose_context');if(ex)ex.loseContext();startTimer()}}catch(e){fail()}}function unlock(){try{if(typeof f.contentWindow.__nexhostAudioUnlock==='function')f.contentWindow.__nexhostAudioUnlock()}catch(e){}}document.addEventListener('pointerdown',unlock,true);document.addEventListener('keydown',unlock,true)})();
 </script>
 
-<script>
-// DEMO AUTH (clone): akun demo lokal, tanpa server
-(function(){
-  const DEMO = {email:'xieryzen@gmail.com', pass:'restu1807'};
-  function hook(formId, isLogin){
-    const f = document.getElementById(formId);
-    if(!f) return;
-    f.addEventListener('submit', function(e){
-      e.preventDefault();
-      const em = f.querySelector('[name=email]') ? f.querySelector('[name=email]').value.trim().toLowerCase() : '';
-      const pw = f.querySelector('[name=password]') ? f.querySelector('[name=password]').value : '';
-      const err = f.querySelector('.error-msg');
-      if(isLogin){
-        if(em===DEMO.email && pw===DEMO.pass){
-          localStorage.setItem('nx_demo_user', em);
-          window.location.href='index.html';
-        } else {
-          if(err){err.textContent='Email atau kata sandi salah. (Demo: xieryzen@gmail.com)';err.style.display='block';}
-        }
-      } else {
-        localStorage.setItem('nx_demo_user', em);
-        window.location.href='index.html';
-      }
-    });
-  }
-  hook('loginForm', true);
-  hook('registerForm', false);
-})();
-</script>
 </body>
 
 </html>

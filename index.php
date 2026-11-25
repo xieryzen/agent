@@ -1,3 +1,7 @@
+<?php
+require_once __DIR__ . '/auth.php';
+nx_require_login();
+?>
 <!doctype html>
 <html lang="id" data-engines="20" data-mc="13" data-mcp="fabric,folia,geyser,paper,purpur,spigot,velocity">
 <head>
@@ -23,11 +27,11 @@
 <aside class="zx-rail" aria-label="Navigasi samping">
   <a class="rl-ic rl-logo" href="/" title="NexHost AI"><img src="/assets/nx-logo.svg" alt="NexHost AI" width="20" height="20"></a>
   <a class="rl-ic on" href="#mulai" title="Beranda"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1Z"/></svg></a>
-  <a class="rl-ic" href="login.html" title="Riwayat chat (masuk dulu)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></a>
+  <a class="rl-ic" href="login.php" title="Riwayat chat (masuk dulu)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></a>
   <a class="rl-ic" href="#engine" title="Engine"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20 7v10l-8 4.2L4 17V7Z"/><path d="m4 7 8 4.3L20 7M12 11.3v9.9"/></svg></a>
   <span class="rl-sp"></span>
   <a class="rl-ic" href="https://chat.whatsapp.com/DZyLn0WCWiuL3AIk21p8VY?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener" title="Grup WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></a>
-  <a class="rl-av" href="login.html" title="Masuk">N</a>
+  <a class="rl-av" href="login.php" title="Masuk">N</a>
 </aside>
 
 <div class="zx-panel">
@@ -38,8 +42,8 @@
   </nav>
   <span class="zx-sp"></span>
   <a class="zx-tl" href="https://portal.nexhostku.com/" target="_blank" rel="noopener">Portal<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-  <a class="zx-tl hide-s" href="login.html" rel="noopener">Daftar<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-  <a class="zx-signin" href="login.html">Masuk</a>
+  <a class="zx-tl hide-s" href="login.php" rel="noopener">Daftar<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  <a class="zx-signin" href="login.php">Masuk</a>
   <button class="zx-burger" id="navBurger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </header>
 
@@ -52,37 +56,37 @@
     <p class="zx-sub">AI agent dengan komputer sendiri — menulis kode, menjalankan, lalu menguji hasilnya dengan 20 engine end-to-end.</p>
   </div>
   <div class="zx-cards">
-    <a class="zc" href="login.html" data-p="Buatkan game obby Roblox dengan checkpoint, leaderstats, dan DataStore, lalu uji sampai lulus QA">
+    <a class="zc" href="login.php" data-p="Buatkan game obby Roblox dengan checkpoint, leaderstats, dan DataStore, lalu uji sampai lulus QA">
       <span class="zc-box zc-rbx" aria-hidden="true">
         <span class="mk-win"><span class="mk-bar"><i></i><i></i><i></i></span><img src="/assets/landing-ai/roblox-play.webp?v=317668" alt="" loading="lazy" decoding="async"></span>
       </span>
       <span class="zc-l">Game Roblox</span>
     </a>
-    <a class="zc" href="login.html" data-p="Buat plugin Minecraft Paper /shop dengan GUI chest dan ekonomi, lalu uji di server">
+    <a class="zc" href="login.php" data-p="Buat plugin Minecraft Paper /shop dengan GUI chest dan ekonomi, lalu uji di server">
       <span class="zc-box zc-mc" aria-hidden="true">
         <span class="mk-win"><span class="mk-bar"><i></i><i></i><i></i></span><img src="/assets/landing-ai/minecraft-test.webp?v=317668" alt="" loading="lazy" decoding="async"></span>
       </span>
       <span class="zc-l">Plugin Minecraft</span>
     </a>
-    <a class="zc" href="login.html" data-p="Bikin aplikasi Android kasir sederhana, kirim file APK-nya">
+    <a class="zc" href="login.php" data-p="Bikin aplikasi Android kasir sederhana, kirim file APK-nya">
       <span class="zc-box zc-apk" aria-hidden="true">
         <img class="mk-free" src="/assets/landing-ai/android-phone.webp?v=317668" alt="" loading="lazy" decoding="async">
       </span>
       <span class="zc-l">Aplikasi Android</span>
     </a>
-    <a class="zc" href="login.html" data-p="Buat video animasi 3D 30 detik promosi warung kopi, lengkap dengan narasi">
+    <a class="zc" href="login.php" data-p="Buat video animasi 3D 30 detik promosi warung kopi, lengkap dengan narasi">
       <span class="zc-box zc-vid" aria-hidden="true">
         <span class="mk-reels"><img src="/assets/styles/flat2d.webp" alt="" loading="lazy"><img src="/assets/styles/cerita3d.webp" alt="" loading="lazy"><img src="/assets/styles/lowpoly3d.webp" alt="" loading="lazy"></span>
       </span>
       <span class="zc-l">Video Animasi</span>
     </a>
-    <a class="zc" href="login.html" data-p="Bikinkan landing page toko online lalu cek tampilannya di desktop dan HP">
+    <a class="zc" href="login.php" data-p="Bikinkan landing page toko online lalu cek tampilannya di desktop dan HP">
       <span class="zc-box zc-web" aria-hidden="true">
         <span class="mk-site"><span class="ms-nav"><i></i><b></b><b></b><b></b><em></em></span><span class="ms-h">Kopi Senja</span><span class="ms-l"></span><span class="ms-l s"></span><span class="ms-btn"></span><span class="ms-row"><i></i><i></i><i></i></span></span>
       </span>
       <span class="zc-l">Website</span>
     </a>
-    <a class="zc" href="login.html" data-p="Panel Pterodactyl saya error 500, tolong cek dan perbaiki di VPS">
+    <a class="zc" href="login.php" data-p="Panel Pterodactyl saya error 500, tolong cek dan perbaiki di VPS">
       <span class="zc-box zc-vps" aria-hidden="true">
         <span class="mk-term"><span class="mt-l c">$ systemctl status nginx</span><span class="mt-l g">● active (running)</span><span class="mt-l c">$ curl -I panel.domain.id</span><span class="mt-l g">HTTP/2 200 · OK</span><span class="mt-l">backup → /root/nx-bak/</span></span>
       </span>
@@ -90,11 +94,11 @@
     </a>
   </div>
 
-  <form class="zx-comp" id="zxComp" action="login.html" method="get" autocomplete="off">
+  <form class="zx-comp" id="zxComp" action="login.php" method="get" autocomplete="off">
     <label class="sr" for="zxIn">Pesan untuk NexHost AI</label>
     <textarea id="zxIn" name="q" rows="2" maxlength="8000" placeholder="Suruh NexHost AI mengerjakan apa saja…"></textarea>
     <div class="zx-bar">
-      <a class="zx-ib" href="login.html" title="Lampirkan file (masuk dulu)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
+      <a class="zx-ib" href="login.php" title="Lampirkan file (masuk dulu)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
       <span class="zx-sp"></span>
       <a class="zx-model" href="#model" title="Model AI"><b>Claude Opus 5.5</b><em>Thinking</em><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
       <button class="zx-send" id="zxSend" type="submit" title="Kirim — kamu akan diminta masuk dulu" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
@@ -339,16 +343,16 @@
       <h2 class="h2">Coba suruh begini.</h2>
     </div>
     <div class="prompts rv">
-      <a class="prompt" href="login.html" data-p="Buatkan game obby Roblox dengan checkpoint, leaderstats, dan DataStore"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20 7v10l-8 4.2L4 17V7Z"/><path d="m4 7 8 4.3L20 7M12 11.3v9.9"/></svg><span>Buatkan game obby Roblox dengan checkpoint, leaderstats, dan DataStore</span></a>
-      <a class="prompt" href="login.html" data-p="Bikin sistem toko Roblox: tombol GUI, RemoteEvent, dan validasi di server"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20 7v10l-8 4.2L4 17V7Z"/><path d="m4 7 8 4.3L20 7M12 11.3v9.9"/></svg><span>Bikin sistem toko Roblox: tombol GUI, RemoteEvent, dan validasi di server</span></a>
-      <a class="prompt" href="login.html" data-p="Buat plugin Minecraft Paper /shop dengan GUI chest dan ekonomi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4.5c2.5-.6 5 .4 6.5 2-3.2-.8-5.6-.3-7.5.9M9.5 9.5 3 16l2 2 6.5-6.5"/><path d="m8 8 3-3 8 8-3 3Z"/></svg><span>Buat plugin Minecraft Paper /shop dengan GUI chest dan ekonomi</span></a>
-      <a class="prompt" href="login.html" data-p="Perbaiki addon Bedrock saya yang bikin player force-close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4.5c2.5-.6 5 .4 6.5 2-3.2-.8-5.6-.3-7.5.9M9.5 9.5 3 16l2 2 6.5-6.5"/><path d="m8 8 3-3 8 8-3 3Z"/></svg><span>Perbaiki addon Bedrock saya yang bikin player force-close</span></a>
-      <a class="prompt" href="login.html" data-p="Bikin aplikasi Android kasir sederhana, kirim file APK-nya"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="9" width="14" height="10" rx="2"/><path d="M8 9a4 4 0 0 1 8 0M7.5 4.5 9 7M16.5 4.5 15 7M10 12.5h.01M14 12.5h.01"/></svg><span>Bikin aplikasi Android kasir sederhana, kirim file APK-nya</span></a>
-      <a class="prompt" href="login.html" data-p="Buat video animasi 3D 30 detik promosi warung kopi, ada narasinya"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/><path d="m10.5 9.8 3.5 2.2-3.5 2.2Z"/></svg><span>Buat video animasi 3D 30 detik promosi warung kopi, ada narasinya</span></a>
-      <a class="prompt" href="login.html" data-p="Bikinkan landing page toko online lalu cek tampilannya di HP"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8M12 17v4M2.5 8h19"/></svg><span>Bikinkan landing page toko online lalu cek tampilannya di HP</span></a>
-      <a class="prompt" href="login.html" data-p="Panel Pterodactyl saya error 500, tolong perbaiki di VPS"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg><span>Panel Pterodactyl saya error 500, tolong perbaiki di VPS</span></a>
-      <a class="prompt" href="login.html" data-p="Clone repo GitHub saya, perbaiki bug login, lalu buat pull request"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg><span>Clone repo GitHub saya, perbaiki bug login, lalu buat pull request</span></a>
-      <a class="prompt" href="login.html" data-p="Baca ZIP source code ini sampai habis dan jelaskan arsitekturnya"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span>Baca ZIP source code ini sampai habis dan jelaskan arsitekturnya</span></a>
+      <a class="prompt" href="login.php" data-p="Buatkan game obby Roblox dengan checkpoint, leaderstats, dan DataStore"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20 7v10l-8 4.2L4 17V7Z"/><path d="m4 7 8 4.3L20 7M12 11.3v9.9"/></svg><span>Buatkan game obby Roblox dengan checkpoint, leaderstats, dan DataStore</span></a>
+      <a class="prompt" href="login.php" data-p="Bikin sistem toko Roblox: tombol GUI, RemoteEvent, dan validasi di server"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20 7v10l-8 4.2L4 17V7Z"/><path d="m4 7 8 4.3L20 7M12 11.3v9.9"/></svg><span>Bikin sistem toko Roblox: tombol GUI, RemoteEvent, dan validasi di server</span></a>
+      <a class="prompt" href="login.php" data-p="Buat plugin Minecraft Paper /shop dengan GUI chest dan ekonomi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4.5c2.5-.6 5 .4 6.5 2-3.2-.8-5.6-.3-7.5.9M9.5 9.5 3 16l2 2 6.5-6.5"/><path d="m8 8 3-3 8 8-3 3Z"/></svg><span>Buat plugin Minecraft Paper /shop dengan GUI chest dan ekonomi</span></a>
+      <a class="prompt" href="login.php" data-p="Perbaiki addon Bedrock saya yang bikin player force-close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4.5c2.5-.6 5 .4 6.5 2-3.2-.8-5.6-.3-7.5.9M9.5 9.5 3 16l2 2 6.5-6.5"/><path d="m8 8 3-3 8 8-3 3Z"/></svg><span>Perbaiki addon Bedrock saya yang bikin player force-close</span></a>
+      <a class="prompt" href="login.php" data-p="Bikin aplikasi Android kasir sederhana, kirim file APK-nya"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="9" width="14" height="10" rx="2"/><path d="M8 9a4 4 0 0 1 8 0M7.5 4.5 9 7M16.5 4.5 15 7M10 12.5h.01M14 12.5h.01"/></svg><span>Bikin aplikasi Android kasir sederhana, kirim file APK-nya</span></a>
+      <a class="prompt" href="login.php" data-p="Buat video animasi 3D 30 detik promosi warung kopi, ada narasinya"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/><path d="m10.5 9.8 3.5 2.2-3.5 2.2Z"/></svg><span>Buat video animasi 3D 30 detik promosi warung kopi, ada narasinya</span></a>
+      <a class="prompt" href="login.php" data-p="Bikinkan landing page toko online lalu cek tampilannya di HP"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8M12 17v4M2.5 8h19"/></svg><span>Bikinkan landing page toko online lalu cek tampilannya di HP</span></a>
+      <a class="prompt" href="login.php" data-p="Panel Pterodactyl saya error 500, tolong perbaiki di VPS"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg><span>Panel Pterodactyl saya error 500, tolong perbaiki di VPS</span></a>
+      <a class="prompt" href="login.php" data-p="Clone repo GitHub saya, perbaiki bug login, lalu buat pull request"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg><span>Clone repo GitHub saya, perbaiki bug login, lalu buat pull request</span></a>
+      <a class="prompt" href="login.php" data-p="Baca ZIP source code ini sampai habis dan jelaskan arsitekturnya"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span>Baca ZIP source code ini sampai habis dan jelaskan arsitekturnya</span></a>
     </div>
   </div>
 </section>
@@ -396,7 +400,7 @@
       <img class="final-dots" src="/assets/landing-ai/halftone.webp?v=439412" alt="" aria-hidden="true" loading="lazy">
       <h2 class="h2">Ide hari ini. Jadi hari ini.</h2>
       <p class="lead">Game, plugin, aplikasi, video, website, atau server — serahkan ke NexHost AI dan tonton dia bekerja sampai tuntas.</p>
-      <div class="cta"><a class="btn" href="login.html">Mulai sekarang<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="login.html" rel="noopener">Daftar akun NexHost</a></div>
+      <div class="cta"><a class="btn" href="login.php">Mulai sekarang<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="login.php" rel="noopener">Daftar akun NexHost</a></div>
     </div>
   </div>
 </section>
@@ -410,7 +414,7 @@
         <p>AI agent dengan komputer sendiri. Dibuat, diuji, dan dibuktikan dengan screenshot.</p>
       </div>
       <div><b>Engine</b><a href="#roblox">Roblox Studio</a><a href="#minecraft">Minecraft</a><a href="#android">Android APK</a><a href="#video">Video Animasi</a><a href="#web">Website &amp; QA</a><a href="#vps">VPS &amp; Server</a></div>
-      <div><b>NexHost AI</b><a href="#fitur">Fitur</a><a href="#model">Model</a><a href="#cara">Cara kerja</a><a href="#faq">FAQ</a><a href="login.html">Masuk</a></div>
+      <div><b>NexHost AI</b><a href="#fitur">Fitur</a><a href="#model">Model</a><a href="#cara">Cara kerja</a><a href="#faq">FAQ</a><a href="login.php">Masuk</a></div>
       <div><b>Layanan</b><a href="https://portal.nexhostku.com/">NexHost</a><a href="https://portal.nexhostku.com/product/vps.php">VPS</a><a href="https://portal.nexhostku.com/#smtp">SMTP Service</a><a href="https://portal.nexhostku.com/#free-permanen">Hosting gratis permanen</a><a href="https://chat.whatsapp.com/DZyLn0WCWiuL3AIk21p8VY?s=cl&amp;p=a&amp;iam=2" rel="noopener">WhatsApp Group NexHost</a></div>
     </div>
     <p class="foot-note">NexHost AI menggunakan akun portal.nexhostku.com. Hasil uji E2E dijalankan di lingkungan offline yang meniru Roblox &amp; Minecraft; tetap disarankan mencoba akhir di Roblox Studio / server produksi kamu.</p>
