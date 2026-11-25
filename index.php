@@ -1,21 +1,21 @@
 <?php
 require_once __DIR__ . '/auth.php';
-nx_require_login();
+xiero_require_login();
 ?>
 <!doctype html>
 <html lang="id" data-engines="20" data-mc="13" data-mcp="fabric,folia,geyser,paper,purpur,spigot,velocity">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
-<title>NexHost AI — AI agent dengan komputer sendiri</title>
-<meta name="description" content="NexHost AI: AI agent dengan komputer Linux sendiri dan 20 engine uji E2E — Roblox Studio, Minecraft, Android APK, video animasi, website & QA, VPS. Dibuat, diuji, dan dibuktikan dengan screenshot.">
-<meta name="theme-color" content="#ffffff">
+<title>Xiero AI — AI agent dengan komputer sendiri</title>
+<meta name="description" content="Xiero AI: AI agent dengan komputer Linux sendiri dan 20 engine uji E2E — Roblox Studio, Minecraft, Android APK, video animasi, website & QA, VPS. Dibuat, diuji, dan dibuktikan dengan screenshot.">
+<meta name="theme-color" content="#0E0E11">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preload" href="/assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/zfonts.css?v=439412">
-<meta property="og:title" content="NexHost AI — AI agent dengan komputer sendiri & 20 engine uji E2E">
+<meta property="og:title" content="Xiero AI — AI agent dengan komputer sendiri & 20 engine uji E2E">
 <meta property="og:description" content="Roblox Studio, Minecraft, Android APK, video animasi, website & QA, VPS — dibuat, diuji end-to-end, dan dibuktikan dengan screenshot.">
-<meta property="og:image" content="https://ai.nexhostku.com/assets/landing-ai/roblox-play.webp">
+<meta property="og:image" content="https://ai.xieroku.com/assets/landing-ai/roblox-play.webp">
 <link rel="stylesheet" href="/assets/landing.css?v=439412">
 <script src="/assets/landing.js?v=439412"></script>
 </head>
@@ -25,23 +25,23 @@ nx_require_login();
 
 <!-- slim left rail (z.ai) -->
 <aside class="zx-rail" aria-label="Navigasi samping">
-  <a class="rl-ic rl-logo" href="/" title="NexHost AI"><img src="/assets/nx-logo.svg" alt="NexHost AI" width="20" height="20"></a>
+  <a class="rl-ic rl-logo" href="/" title="Xiero AI"><img src="/assets/x-logo.svg" alt="Xiero AI" width="20" height="20"></a>
   <a class="rl-ic on" href="#mulai" title="Beranda"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1Z"/></svg></a>
   <a class="rl-ic" href="login.php" title="Riwayat chat (masuk dulu)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></a>
   <a class="rl-ic" href="#engine" title="Engine"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8 20 7v10l-8 4.2L4 17V7Z"/><path d="m4 7 8 4.3L20 7M12 11.3v9.9"/></svg></a>
   <span class="rl-sp"></span>
-  <a class="rl-ic" href="https://chat.whatsapp.com/DZyLn0WCWiuL3AIk21p8VY?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener" title="Grup WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></a>
+  <a class="rl-ic" href="https://wa.me/6282183365089" target="_blank" rel="noopener" title="Grup WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></a>
   <a class="rl-av" href="login.php" title="Masuk">N</a>
 </aside>
 
 <div class="zx-panel">
 <header class="zx-top" id="nav">
-  <a class="zx-brand" href="/"><img src="/assets/nx-logo.svg" alt="" width="20" height="20"><b>NexHost</b><span>AI</span></a>
+  <a class="zx-brand" href="/"><img src="/assets/x-logo.svg" alt="" width="20" height="20"><b>Xiero</b><span>AI</span></a>
   <nav class="zx-links" id="navLinks" aria-label="Navigasi">
     <a href="#engine">Engine</a><a href="#roblox">Roblox</a><a href="#minecraft">Minecraft</a><a href="#video">Video</a><a href="#model">Model</a><a href="#faq">FAQ</a>
   </nav>
   <span class="zx-sp"></span>
-  <a class="zx-tl" href="https://portal.nexhostku.com/" target="_blank" rel="noopener">Portal<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  <a class="zx-tl" href="https://portal.xieroku.com/" target="_blank" rel="noopener">Portal<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
   <a class="zx-tl hide-s" href="login.php" rel="noopener">Daftar<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
   <a class="zx-signin" href="login.php">Masuk</a>
   <button class="zx-burger" id="navBurger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
@@ -95,8 +95,8 @@ nx_require_login();
   </div>
 
   <form class="zx-comp" id="zxComp" action="login.php" method="get" autocomplete="off">
-    <label class="sr" for="zxIn">Pesan untuk NexHost AI</label>
-    <textarea id="zxIn" name="q" rows="2" maxlength="8000" placeholder="Suruh NexHost AI mengerjakan apa saja…"></textarea>
+    <label class="sr" for="zxIn">Pesan untuk Xiero AI</label>
+    <textarea id="zxIn" name="q" rows="2" maxlength="8000" placeholder="Suruh Xiero AI mengerjakan apa saja…"></textarea>
     <div class="zx-bar">
       <a class="zx-ib" href="login.php" title="Lampirkan file (masuk dulu)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
       <span class="zx-sp"></span>
@@ -104,7 +104,7 @@ nx_require_login();
       <button class="zx-send" id="zxSend" type="submit" title="Kirim — kamu akan diminta masuk dulu" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
     </div>
   </form>
-  <p class="zx-legal">Dibuat oleh AI, cek ulang hal penting. <a href="#engine">Kemampuan</a><a href="#faq">FAQ</a><a href="https://chat.whatsapp.com/DZyLn0WCWiuL3AIk21p8VY?s=cl&amp;p=a&amp;iam=2" target="_blank" rel="noopener">Grup WhatsApp</a></p>
+  <p class="zx-legal">Dibuat oleh AI, cek ulang hal penting. <a href="#engine">Kemampuan</a><a href="#faq">FAQ</a><a href="https://instagram.com/itsmexiero_" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/6282183365089" target="_blank" rel="noopener">WhatsApp</a></p>
   <a class="zx-more" href="#engine" aria-label="Gulir ke kemampuan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
 </section>
 
@@ -145,7 +145,7 @@ nx_require_login();
       <p class="lead">Obby, simulator, tycoon, tool, GUI, sampai DataStore — AI membangun place dengan Rojo, menjalankan server &amp; client di Luau VM, lalu memasukkan player sungguhan untuk mencoba setiap fitur. Hasilnya file <b>.rbxl</b> yang langsung dibuka di Roblox Studio.</p>
       <div class="stages"><span class="on">01 Build</span><span>02 Lint</span><span>03 Play</span><span>04 QA</span></div>
     </div>
-    <div class="stage rv"><figure class="win big"><div class="win-bar"><i></i><i></i><i></i><span>127.0.0.1:25590/?stage=play</span></div><img src="/assets/landing-ai/roblox-play.webp?v=317668" alt="NexHost Roblox Studio — gameplay live: player Budi, leaderboard, chat, explorer, output" loading="lazy" decoding="async"></figure></div>
+    <div class="stage rv"><figure class="win big"><div class="win-bar"><i></i><i></i><i></i><span>127.0.0.1:25590/?stage=play</span></div><img src="/assets/landing-ai/roblox-play.webp?v=317668" alt="Xiero Roblox Studio — gameplay live: player Budi, leaderboard, chat, explorer, output" loading="lazy" decoding="async"></figure></div>
     <div class="duo">
       <div class="tm rv" data-type><div class="tm-bar"><i></i><i></i><i></i><span>nxrbx · CoinRush</span></div><pre class="tm-o"><span class="tl c">$ nxrbx build &amp;&amp; nxrbx lint</span><span class="tl g">[nxrbx] BUILD OK -&gt; build/CoinRush.rbxl</span><span class="tl d">  selene 0 error · luau-lsp 0 error · stylua rapi</span><span class="tl c">$ nxrbx start &amp;&amp; nxrbx join --player Budi</span><span class="tl g">ROBLOX SERVER READY · 1 Script server jalan · 0 error</span><span class="tl ">JOIN OK Budi · pos=(0, 4, 0) health=100/100</span><span class="tl c">$ nxrbx touch Coin1 --expect &quot;Coins=5&quot;</span><span class="tl g">  EXPECT &#039;Coins=5&#039; -&gt; OK</span><span class="tl c">$ nxrbx rejoin --player Budi --expect &quot;Coins=15&quot;</span><span class="tl g">REJOIN OK Budi · Coins=15 (DataStore tersimpan)</span><span class="tl c">$ nxrbx qa</span><span class="tl ok">RBX E2E QA LULUS  ·  7/7 PASS</span></pre></div>      <div class="duo-shots">
         <figure class="win rv sm"><div class="win-bar"><i></i><i></i><i></i><span>127.0.0.1:25590/?stage=qa</span></div><img src="/assets/landing-ai/roblox-qa.webp?v=317668" alt="Laporan Roblox E2E QA LULUS" loading="lazy" decoding="async"></figure>        <figure class="win rv sm"><div class="win-bar"><i></i><i></i><i></i><span>127.0.0.1:25590/?stage=build</span></div><img src="/assets/landing-ai/roblox-build.webp?v=317668" alt="Laporan build place Roblox" loading="lazy" decoding="async"></figure>      </div>
@@ -168,9 +168,9 @@ nx_require_login();
     <div class="sec-head rv">
       <p class="eyebrow">nxmc — Engine Minecraft</p>
       <h2 class="h2">Login beneran, bukan kira-kira.</h2>
-      <p class="lead">AI menyalakan server Minecraft asli, masuk sebagai player <b>NexHostQA</b>, menjalankan command, membuka Chest GUI, lalu memastikan tidak ada exception maupun force-close. Semua offline — tanpa menunggu download.</p>
+      <p class="lead">AI menyalakan server Minecraft asli, masuk sebagai player <b>XieroQA</b>, menjalankan command, membuka Chest GUI, lalu memastikan tidak ada exception maupun force-close. Semua offline — tanpa menunggu download.</p>
     </div>
-    <div class="stage rv"><figure class="win big"><div class="win-bar"><i></i><i></i><i></i><span>127.0.0.1:25580/?stage=test</span></div><img src="/assets/landing-ai/minecraft-test.webp?v=317668" alt="NexHost Minecraft Live E2E — player NexHostQA in-game, console server, riwayat uji" loading="lazy" decoding="async"></figure></div>
+    <div class="stage rv"><figure class="win big"><div class="win-bar"><i></i><i></i><i></i><span>127.0.0.1:25580/?stage=test</span></div><img src="/assets/landing-ai/minecraft-test.webp?v=317668" alt="Xiero Minecraft Live E2E — player XieroQA in-game, console server, riwayat uji" loading="lazy" decoding="async"></figure></div>
     <div class="grid4">
       <div class="card rv"><b>Paper 26.3 · 1.21.11 · 1.20.4</b><p>Engine sudah di-patch & world sudah dibuat. Server boot dalam hitungan detik.</p></div>
       <div class="card rv"><b>Purpur · Fabric · Velocity</b><p>Plus server Bedrock (BDS) untuk addon. JDK 25/21 + Maven offline.</p></div>
@@ -178,7 +178,7 @@ nx_require_login();
       <div class="card rv"><b>0 exception · 0 force-close</b><p>Console & ContentLog diperiksa. QA harus LULUS sebelum diserahkan.</p></div>
     </div>
     <div class="duo">
-      <figure class="win rv sm"><div class="win-bar"><i></i><i></i><i></i><span>127.0.0.1:25580/?stage=qa</span></div><img src="/assets/landing-ai/minecraft-qa.webp?v=317668" alt="Laporan Minecraft E2E QA LULUS" loading="lazy" decoding="async"></figure>      <div class="tm rv" data-type><div class="tm-bar"><i></i><i></i><i></i><span>nxmc · ShopPlugin</span></div><pre class="tm-o"><span class="tl c">$ nxmc build /workspace/ShopPlugin</span><span class="tl g">[nxmc] BUILD OK (7.7s) -&gt; ShopPlugin-1.0.0.jar</span><span class="tl c">$ nxmc start --plugin target/ShopPlugin-1.0.0.jar</span><span class="tl g">[nxmc] SERVER READY (PAPER 26.3) — 0 startup errors</span><span class="tl c">$ nxmc login --op</span><span class="tl ">[nxmc] LOGIN OK — Player NexHostQA joined in-game</span><span class="tl c">$ nxmc cmd &quot;/shop&quot;</span><span class="tl ">  [chat] [ShopPlugin] Halo NexHostQA! Plugin jalan.</span><span class="tl c">$ nxmc qa</span><span class="tl ok">MC E2E QA LULUS  ·  0 error · server tidak crash</span></pre></div>    </div>
+      <figure class="win rv sm"><div class="win-bar"><i></i><i></i><i></i><span>127.0.0.1:25580/?stage=qa</span></div><img src="/assets/landing-ai/minecraft-qa.webp?v=317668" alt="Laporan Minecraft E2E QA LULUS" loading="lazy" decoding="async"></figure>      <div class="tm rv" data-type><div class="tm-bar"><i></i><i></i><i></i><span>nxmc · ShopPlugin</span></div><pre class="tm-o"><span class="tl c">$ nxmc build /workspace/ShopPlugin</span><span class="tl g">[nxmc] BUILD OK (7.7s) -&gt; ShopPlugin-1.0.0.jar</span><span class="tl c">$ nxmc start --plugin target/ShopPlugin-1.0.0.jar</span><span class="tl g">[nxmc] SERVER READY (PAPER 26.3) — 0 startup errors</span><span class="tl c">$ nxmc login --op</span><span class="tl ">[nxmc] LOGIN OK — Player XieroQA joined in-game</span><span class="tl c">$ nxmc cmd &quot;/shop&quot;</span><span class="tl ">  [chat] [ShopPlugin] Halo XieroQA! Plugin jalan.</span><span class="tl c">$ nxmc qa</span><span class="tl ok">MC E2E QA LULUS  ·  0 error · server tidak crash</span></pre></div>    </div>
   </div>
 </section>
 
@@ -196,7 +196,7 @@ nx_require_login();
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Tidak dinyatakan selesai sebelum muncul <b>APK OK</b></span></li>
       </ul>
     </div>
-    <div class="artpanel rv"><img class="art" src="/assets/landing-ai/android-phone.webp?v=317668" alt="Aplikasi Android buatan NexHost AI berjalan di ponsel" loading="lazy" width="1300" height="867"></div>
+    <div class="artpanel rv"><img class="art" src="/assets/landing-ai/android-phone.webp?v=317668" alt="Aplikasi Android buatan Xiero AI berjalan di ponsel" loading="lazy" width="1300" height="867"></div>
   </div>
 </section>
 
@@ -238,7 +238,7 @@ nx_require_login();
 <!-- ============================================================ WEB + QA -->
 <section class="sec" id="web">
   <div class="wrap split rev">
-    <div class="artpanel rv"><img class="art" src="/assets/landing-ai/laptop-code.webp?v=317668" alt="Website dibangun dan diuji NexHost AI" loading="lazy" width="1400" height="933"></div>
+    <div class="artpanel rv"><img class="art" src="/assets/landing-ai/laptop-code.webp?v=317668" alt="Website dibangun dan diuji Xiero AI" loading="lazy" width="1400" height="933"></div>
     <div>
       <p class="eyebrow rv">nxqa — Website &amp; QA</p>
       <h2 class="h2 rv">Website jadi, dicek di desktop &amp; HP.</h2>
@@ -259,13 +259,13 @@ nx_require_login();
     <div>
       <p class="eyebrow rv">agent — VPS &amp; Server</p>
       <h2 class="h2 rv">Server bermasalah? AI masuk sebagai root.</h2>
-      <p class="lead rv">Hubungkan VPS lewat agent NexHost atau SSH. AI memeriksa log, memperbaiki Pterodactyl yang error 500, nginx, SSL, database, atau firewall — backup dulu sebelum mengubah file, lalu memverifikasi dari dalam dan luar server.</p>
+      <p class="lead rv">Hubungkan VPS lewat agent Xiero atau SSH. AI memeriksa log, memperbaiki Pterodactyl yang error 500, nginx, SSL, database, atau firewall — backup dulu sebelum mengubah file, lalu memverifikasi dari dalam dan luar server.</p>
     </div>
-    <div class="artpanel rv"><img class="art" src="/assets/landing-ai/hero-server.webp?v=317668" alt="Server VPS yang dikelola NexHost AI" loading="lazy" width="1600" height="740"></div>
+    <div class="artpanel rv"><img class="art" src="/assets/landing-ai/hero-server.webp?v=317668" alt="Server VPS yang dikelola Xiero AI" loading="lazy" width="1600" height="740"></div>
   </div>
   <div class="wrap">
     <div class="grid4">
-      <div class="card rv"><span class="fi"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><b>Akses root aman</b><p>Lewat agent resmi NexHost, bisa diputus kapan saja.</p></div>
+      <div class="card rv"><span class="fi"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><b>Akses root aman</b><p>Lewat agent resmi Xiero, bisa diputus kapan saja.</p></div>
       <div class="card rv"><span class="fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><b>Backup dulu</b><p>Setiap file yang diubah dicadangkan lebih dulu.</p></div>
       <div class="card rv"><span class="fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13.5" r="3.5"/></svg></span><b>Bukti nyata</b><p>Cek curl + screenshot halaman publik sebagai bukti.</p></div>
       <div class="card rv"><span class="fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><b>Laporan jujur</b><p>Beres, sebagian, atau belum — tanpa basa-basi.</p></div>
@@ -294,7 +294,7 @@ nx_require_login();
     <div class="sec-head rv">
       <p class="eyebrow">Kecerdasan</p>
       <h2 class="h2">Otak yang terus belajar.</h2>
-      <p class="lead">NexHost AI mengingat project dan preferensimu, memakai ribuan skill secara otomatis, dan tidak mengulangi kesalahan yang sama.</p>
+      <p class="lead">Xiero AI mengingat project dan preferensimu, memakai ribuan skill secara otomatis, dan tidak mengulangi kesalahan yang sama.</p>
     </div>
     <div class="bento2">
       <div class="b2 wide rv">
@@ -382,12 +382,12 @@ nx_require_login();
       <h2 class="h2">Pertanyaan umum.</h2>
     </div>
     <div class="faq">
-      <details class="rv"><summary>Apa bedanya dengan chatbot biasa?<i></i></summary><p>Chatbot biasa hanya menulis jawaban. NexHost AI punya komputer sendiri: dia menjalankan kode, memasang dependensi, menguji hasil dengan engine E2E, dan menunjukkan screenshot sebagai bukti sebelum bilang selesai.</p></details>
+      <details class="rv"><summary>Apa bedanya dengan chatbot biasa?<i></i></summary><p>Chatbot biasa hanya menulis jawaban. Xiero AI punya komputer sendiri: dia menjalankan kode, memasang dependensi, menguji hasil dengan engine E2E, dan menunjukkan screenshot sebagai bukti sebelum bilang selesai.</p></details>
       <details class="rv"><summary>Apakah saya perlu install sesuatu?<i></i></summary><p>Tidak. Semua berjalan di browser. Engine Roblox, Minecraft, Android, video, dan QA web sudah terpasang di komputer AI.</p></details>
       <details class="rv"><summary>Hasil Roblox bisa dibuka di Roblox Studio?<i></i></summary><p>Bisa. AI menyerahkan file .rbxl yang langsung dibuka di Roblox Studio, beserta source code Luau di folder src/ yang bisa disinkron dengan Rojo.</p></details>
       <details class="rv"><summary>Versi Minecraft apa yang didukung?<i></i></summary><p>Paper 26.3, 1.21.11, dan 1.20.4 siap offline, ditambah Purpur, Fabric, Velocity, dan server Bedrock untuk addon.</p></details>
       <details class="rv"><summary>Bagaimana dengan file dan data saya?<i></i></summary><p>Setiap percakapan punya workspace tersendiri dan memori milik akunmu. Komputer AI terisolasi dan tidak bisa mengakses jaringan internal.</p></details>
-      <details class="rv"><summary>Akun apa yang dipakai?<i></i></summary><p>Akun yang sama dengan portal.nexhostku.com. Belum punya? Daftar dulu, lalu masuk ke NexHost AI.</p></details>
+      <details class="rv"><summary>Akun apa yang dipakai?<i></i></summary><p>Akun yang sama dengan portal.xieroku.com. Belum punya? Daftar dulu, lalu masuk ke Xiero AI.</p></details>
       <details class="rv"><summary>Seberapa besar file yang bisa dikirim?<i></i></summary><p>Hingga 100 MB per file, dengan teks sampai 100 juta karakter yang dibaca bertahap sampai habis.</p></details>
     </div>
   </div>
@@ -399,8 +399,8 @@ nx_require_login();
     <div class="final rv">
       <img class="final-dots" src="/assets/landing-ai/halftone.webp?v=439412" alt="" aria-hidden="true" loading="lazy">
       <h2 class="h2">Ide hari ini. Jadi hari ini.</h2>
-      <p class="lead">Game, plugin, aplikasi, video, website, atau server — serahkan ke NexHost AI dan tonton dia bekerja sampai tuntas.</p>
-      <div class="cta"><a class="btn" href="login.php">Mulai sekarang<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="login.php" rel="noopener">Daftar akun NexHost</a></div>
+      <p class="lead">Game, plugin, aplikasi, video, website, atau server — serahkan ke Xiero AI dan tonton dia bekerja sampai tuntas.</p>
+      <div class="cta"><a class="btn" href="login.php">Mulai sekarang<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="login.php" rel="noopener">Daftar akun Xiero</a></div>
     </div>
   </div>
 </section>
@@ -410,15 +410,15 @@ nx_require_login();
   <div class="wrap">
     <div class="foot-cols">
       <div class="foot-brand">
-        <a class="zx-brand" href="/"><img src="/assets/nx-logo.svg" alt="" width="20" height="20"><b>NexHost</b><span>AI</span></a>
+        <a class="zx-brand" href="/"><img src="/assets/x-logo.svg" alt="" width="20" height="20"><b>Xiero</b><span>AI</span></a>
         <p>AI agent dengan komputer sendiri. Dibuat, diuji, dan dibuktikan dengan screenshot.</p>
       </div>
       <div><b>Engine</b><a href="#roblox">Roblox Studio</a><a href="#minecraft">Minecraft</a><a href="#android">Android APK</a><a href="#video">Video Animasi</a><a href="#web">Website &amp; QA</a><a href="#vps">VPS &amp; Server</a></div>
-      <div><b>NexHost AI</b><a href="#fitur">Fitur</a><a href="#model">Model</a><a href="#cara">Cara kerja</a><a href="#faq">FAQ</a><a href="login.php">Masuk</a></div>
-      <div><b>Layanan</b><a href="https://portal.nexhostku.com/">NexHost</a><a href="https://portal.nexhostku.com/product/vps.php">VPS</a><a href="https://portal.nexhostku.com/#smtp">SMTP Service</a><a href="https://portal.nexhostku.com/#free-permanen">Hosting gratis permanen</a><a href="https://chat.whatsapp.com/DZyLn0WCWiuL3AIk21p8VY?s=cl&amp;p=a&amp;iam=2" rel="noopener">WhatsApp Group NexHost</a></div>
+      <div><b>Xiero AI</b><a href="#fitur">Fitur</a><a href="#model">Model</a><a href="#cara">Cara kerja</a><a href="#faq">FAQ</a><a href="login.php">Masuk</a></div>
+      <div><b>Layanan</b><a href="https://portal.xieroku.com/">Xiero</a><a href="https://portal.xieroku.com/product/vps.php">VPS</a><a href="https://portal.xieroku.com/#smtp">SMTP Service</a><a href="https://portal.xieroku.com/#free-permanen">Hosting gratis permanen</a><a href="https://instagram.com/itsmexiero_" rel="noopener">Instagram @itsmexiero_</a><a href="https://wa.me/6282183365089" rel="noopener">WhatsApp 082183365089</a></div>
     </div>
-    <p class="foot-note">NexHost AI menggunakan akun portal.nexhostku.com. Hasil uji E2E dijalankan di lingkungan offline yang meniru Roblox &amp; Minecraft; tetap disarankan mencoba akhir di Roblox Studio / server produksi kamu.</p>
-    <div class="foot-b"><span>&copy; 2026 NexHost Cloud Systems</span><span>Dibangun untuk berkembang.</span></div>
+    <p class="foot-note">Xiero AI menggunakan akun portal.xieroku.com. Hasil uji E2E dijalankan di lingkungan offline yang meniru Roblox &amp; Minecraft; tetap disarankan mencoba akhir di Roblox Studio / server produksi kamu.</p>
+    <div class="foot-b"><span>&copy; 2026 Xiero Cloud Systems</span><span>Dibangun untuk berkembang.</span></div>
   </div>
 </footer>
 </div>

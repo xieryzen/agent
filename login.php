@@ -1,5 +1,5 @@
 <?php
-// Login demo server-side (clone ai.nexhostku.com)
+// Login demo server-side (clone ai.xieroku.com)
 // Akun demo tersimpan sebagai hash bcrypt — bukan plaintext.
 session_set_cookie_params(['httponly' => true, 'samesite' => 'Lax']);
 session_start();
@@ -15,13 +15,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($isRegister) {
         // Demo: pendaftaran langsung dianggap berhasil
         session_regenerate_id(true);
-        $_SESSION['nx_user'] = $email;
+        $_SESSION['xiero_user'] = $email;
         header('Location: index.php');
         exit;
     }
     if ($email === $DEMO_EMAIL && password_verify($pass, $DEMO_HASH)) {
         session_regenerate_id(true);
-        $_SESSION['nx_user'] = $email;
+        $_SESSION['xiero_user'] = $email;
         header('Location: index.php');
         exit;
     }

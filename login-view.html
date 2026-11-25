@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-nx-raw>Masuk / Daftar - NexHost</title>
+  <title data-nx-raw>Masuk / Daftar - Xiero</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
@@ -14,22 +14,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#263747;--charcoal:#52677a;--graphite:#718295;--graphite-2:#62758a;--silver:#edf4f9;--silver-dim:#d6e2ea;--chrome:#fff;--white:#fff;--line:rgba(255,255,255,.22);--line-strong:rgba(255,255,255,.42);--danger:#ffdbde;--success:#d6ffe5;--font-display:'Space Grotesk',sans-serif;--font-body:'Inter',sans-serif}
-*,*::before,*::after{box-sizing:border-box}html{min-height:100%;-webkit-font-smoothing:antialiased}body{margin:0;background:#8995a4;color:white;font:14px/1.5 var(--font-body);min-height:100vh}
-.scene{position:fixed;inset:0;z-index:0;background:#a0a5b1 url('/nx-login-scene-v4/assets/fallback.svg') center/cover no-repeat}.scene iframe{position:absolute;inset:0;width:100%;height:100%;border:0;pointer-events:none;background:transparent}.scene:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,55,68,.08),rgba(43,55,68,.18));pointer-events:none}html.scene-failed .scene iframe{display:none}
+*,*::before,*::after{box-sizing:border-box}html{min-height:100%;-webkit-font-smoothing:antialiased}body{margin:0;background:#0E0E11;color:#F5F3EE;font:14px/1.5 var(--font-body);min-height:100vh}
+.scene{position:fixed;inset:0;z-index:0;background:radial-gradient(900px 500px at 80% -10%, rgba(255,178,36,.14), transparent 60%), radial-gradient(700px 400px at -10% 110%, rgba(255,122,26,.10), transparent 55%), #0E0E11}.scene iframe{position:absolute;inset:0;width:100%;height:100%;border:0;pointer-events:none;background:transparent}.scene:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,55,68,.08),rgba(43,55,68,.18));pointer-events:none}html.scene-failed .scene iframe{display:none}
 .brand{position:absolute;top:32px;left:3.5vw;z-index:2;color:white;font:700 27px/1 var(--font-display);letter-spacing:-.06em;text-decoration:none;text-shadow:0 0 16px #ffffff80}.brand .dot{display:none}.brand:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #fff;outline-offset:3px}
-.auth-shell{position:relative;z-index:1;min-height:100svh;display:flex;align-items:center;justify-content:flex-end;padding:80px 6vw 40px;pointer-events:none}.auth-shell #container{pointer-events:auto}#container{width:min(100%,430px);border:1px solid rgba(255,255,255,.42);border-radius:18px;background:rgba(54,71,88,.83);box-shadow:0 28px 80px rgba(25,40,53,.25);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);overflow:hidden}.hud-corner,.page{display:none!important}#container .register{display:none}#container.active .login{display:none}#container.active .register{display:block}.content{padding:38px 38px 30px;text-align:center}.content h1{font:600 32px/1.15 var(--font-display);letter-spacing:-.04em;margin:0 0 24px}.content p{font-size:13px;line-height:1.5;margin:0}form input:not([type=checkbox]),form select{display:block;width:100%;min-width:0;min-height:45px;margin:7px 0;padding:11px 13px;border:1px solid rgba(255,255,255,.32);border-radius:7px;background:rgba(235,245,255,.12);color:white;font:14px var(--font-body)}form select option{color:#253647;background:white}form input::placeholder{color:#e1eaf1;opacity:1}form input:focus,form select:focus{border-color:white;background:rgba(235,245,255,.2)}form input[type=checkbox]{accent-color:#fff;flex-shrink:0}
+.auth-shell{position:relative;z-index:1;min-height:100svh;display:flex;align-items:center;justify-content:flex-end;padding:80px 6vw 40px;pointer-events:none}.auth-shell #container{pointer-events:auto}#container{width:min(100%,430px);border:1px solid rgba(245,243,238,.14);border-radius:18px;background:rgba(21,21,26,.88);box-shadow:0 28px 80px rgba(0,0,0,.5);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);overflow:hidden}.hud-corner,.page{display:none!important}#container .register{display:none}#container.active .login{display:none}#container.active .register{display:block}.content{padding:38px 38px 30px;text-align:center}.content h1{font:600 32px/1.15 var(--font-display);letter-spacing:-.04em;margin:0 0 24px}.content p{font-size:13px;line-height:1.5;margin:0}form input:not([type=checkbox]),form select{display:block;width:100%;min-width:0;min-height:45px;margin:7px 0;padding:11px 13px;border:1px solid rgba(255,255,255,.32);border-radius:7px;background:rgba(235,245,255,.12);color:white;font:14px var(--font-body)}form select option{color:#253647;background:white}form input::placeholder{color:#e1eaf1;opacity:1}form input:focus,form select:focus{border-color:white;background:rgba(235,245,255,.2)}form input[type=checkbox]{accent-color:#fff;flex-shrink:0}
 button{font-family:var(--font-body);cursor:pointer;color:white}form button:not([onclick^="togglePass"]){min-height:42px;padding:10px 13px;border:1px solid rgba(255,255,255,.5);border-radius:7px;background:rgba(255,255,255,.12);font-size:12px;font-weight:600}form button:disabled{opacity:.5;cursor:not-allowed}form button[type=submit]{width:100%;margin-top:10px;background:#fff;color:#354657;border-color:white;font-size:13px;letter-spacing:.04em}form button[type=submit]:hover:not(:disabled){background:#dceaf4}form button[onclick^="togglePass"]{color:white}form input[type=tel],#waOtpInputLogin input,#waOtpInputReg input,#emailOtpInputReg input{min-width:0}#btnSendOtpLogin,#btnSendOtpReg,#waOtpInputLogin button,#waOtpInputReg button{flex-shrink:0;white-space:nowrap}
 .remember{float:left;text-align:left}.forget{float:right;margin:8px 0}.clearfix{clear:both;display:table}a{color:white}.forget a,.otp-hint a{color:white}.error-msg{display:block;color:var(--danger);margin:8px 0;font-size:13px}.wa-member{color:var(--success)}.wa-not_member,.wa-invalid{color:var(--danger)}.wa-error{color:#ffe1b3}.wa-checking{color:var(--silver-dim)}.mobile-switch{margin:19px 0 4px;font-size:13px;color:var(--silver-dim)}.mobile-switch button{border:0;background:none;color:#fff;text-decoration:underline;font:600 13px var(--font-body);padding:7px 3px;margin:0}.loginwith{display:flex;align-items:center;gap:12px;color:var(--silver-dim);font-size:11px;margin:16px 0 0}.loginwith:before,.loginwith:after{content:'';flex:1;height:1px;background:var(--line)}a[href="google_login_start.php"]{display:inline-flex!important;align-items:center;justify-content:center;min-height:42px;min-width:64px;border:1px solid var(--line-strong);border-radius:24px;background:rgba(255,255,255,.10)}.copy{display:block;font-size:11px;color:var(--silver-dim);margin-top:18px}.otp-hint span{display:inline}.cf-turnstile{max-width:100%!important}
 @media(max-width:700px){.brand{top:25px;left:20px;font-size:24px}.auth-shell{align-items:flex-start;justify-content:center;padding:35svh 16px 30px}.content{padding:30px 24px 25px}.content h1{font-size:28px}.scene:after{background:linear-gradient(180deg,rgba(43,55,68,.06),rgba(43,55,68,.22))}}
 @media(max-width:360px){.content{padding:26px 17px}#btnSendOtpLogin,#btnSendOtpReg{padding:8px;font-size:11px}.remember,.forget{font-size:11px!important}}
 @media(prefers-reduced-motion:reduce){.scene iframe{display:none}}
 </style>
+<style>
+:root{color-scheme:dark}
+body{background:radial-gradient(900px 500px at 80% -10%, rgba(255,178,36,.12), transparent 60%), radial-gradient(700px 400px at -10% 110%, rgba(255,122,26,.08), transparent 55%), #0E0E11 !important; color:#F5F3EE}
+.panel,.card,form{background:#15151A !important; border-color:rgba(245,243,238,.12) !important}
+input,select{background:#1B1B21 !important; color:#F5F3EE !important; border-color:rgba(245,243,238,.14) !important}
+input::placeholder{color:#6E6A61 !important}
+a{color:#FFB224}
+button[type=submit],.btn-primary{background:linear-gradient(135deg,#FFB224,#FF7A1A) !important; color:#0E0E11 !important; border:0 !important}
+.brand{color:#F5F3EE !important}
+.dot{background:linear-gradient(135deg,#FFB224,#FF7A1A) !important}
+</style>
 </head>
 
 <body>
   <div class="scene" aria-hidden="true"></div>
 
-  <a href="/index.php" class="brand"><span class="dot"></span>NEXHOST</a>
+  <a href="/index.php" class="brand"><span class="dot"></span>XIERO</a>
 
   <main class="auth-shell"><div id="container" class="">
     <span class="hud-corner tl"></span>
@@ -59,7 +70,7 @@ button{font-family:var(--font-body);cursor:pointer;color:white}form button:not([
         <div class="mobile-switch"><span data-nx-raw>Belum punya akun?</span> <button type="button" onclick="mobileToRegister()" data-nx-raw>Daftar</button></div>
         <span class="loginwith" data-nx-raw style="display:none">Atau masuk dengan</span>
         
-        <span class="copy">&copy; 2026 NexHost</span>
+        <span class="copy">&copy; 2026 Xiero</span>
       </div>
     </div>
 
@@ -117,7 +128,7 @@ button{font-family:var(--font-body);cursor:pointer;color:white}form button:not([
             </button>
           </div>
           <div id="passMsg" style="font-size:12px;display:none;"></div>
-          <span class="remember" style="display:flex;align-items:center;gap:6px;margin:8px 0;"><input type="checkbox" id="acceptTerms" name="accept_terms" value="1" required style="width:15px;height:15px;margin:0;"> <label for="acceptTerms" style="font-size:12px;margin:0;cursor:pointer;color:var(--silver);"><span data-nx-raw>Saya menyetujui </span>&nbsp;<a href="https://portal.nexhostku.com/privacy.php" target="_blank" style="color:var(--chrome);text-decoration:underline;" data-nx-raw>syarat dan ketentuan</a></label></span>
+          <span class="remember" style="display:flex;align-items:center;gap:6px;margin:8px 0;"><input type="checkbox" id="acceptTerms" name="accept_terms" value="1" required style="width:15px;height:15px;margin:0;"> <label for="acceptTerms" style="font-size:12px;margin:0;cursor:pointer;color:var(--silver);"><span data-nx-raw>Saya menyetujui </span>&nbsp;<a href="https://portal.xieroku.com/privacy.php" target="_blank" style="color:var(--chrome);text-decoration:underline;" data-nx-raw>syarat dan ketentuan</a></label></span>
           <span class="clearfix"></span>
                     
           <button type="submit" id="btnDaftar" disabled onclick="return checkMatch(true)" data-nx-raw>Daftar</button>
@@ -158,7 +169,7 @@ button{font-family:var(--font-body);cursor:pointer;color:white}form button:not([
   </script>
 
   <script data-nx-raw>
-  const nxAuthMsg = {"pageTitle":"Masuk \/ Daftar - NexHost","login":"Masuk","register":"Daftar","email":"Email","username":"Nama pengguna","password":"Kata sandi","confirmPassword":"Konfirmasi kata sandi","remember":"Ingat saya","forgot":"Lupa kata sandi?","noAccount":"Belum punya akun?","haveAccount":"Sudah punya akun?","orConnect":"Atau masuk dengan","googleLogin":"Masuk dengan Google","hello":"Halo, teman!","intro":"Isi data pribadi dan mulai perjalananmu bersama kami.","welcome":"Selamat datang kembali!","welcomeBody":"Masuk dengan data akunmu untuk melanjutkan.","accept":"Saya menyetujui ","terms":"syarat dan ketentuan","waNeeded":"WhatsApp 2FA diperlukan untuk akun ini.","sendOtp":"Kirim OTP","otpCode":"Kode 6 digit","verify":"Verifikasi","waHint":"OTP dikirim lewat WhatsApp.","noOtp":"Belum dapat OTP?","contactBot":"Hubungi bot","emailSendOtp":"Kirim kode OTP ke email","emailOtpHint":"Kode OTP akan dikirim ke email di atas.","passwordMatch":"Kata sandi cocok","passwordMismatch":"Kata sandi tidak cocok","invalidPhone":"Format nomor tidak valid.","sending":"Mengirim...","resend":"Kirim ulang","wait":"Tunggu","otpFailed":"Gagal mengirim OTP.","otpSix":"OTP harus 6 digit.","verifying":"Memverifikasi...","verificationFailed":"Verifikasi gagal.","gmailOnly":"Hanya email @gmail.com yang diperbolehkan.","captchaFirst":"Selesaikan captcha di bawah terlebih dahulu.","joinGroup":"Gabung grup","reportFounder":"Laporkan ke founder","close":"Tutup"};
+  const nxAuthMsg = {"pageTitle":"Masuk \/ Daftar - Xiero","login":"Masuk","register":"Daftar","email":"Email","username":"Nama pengguna","password":"Kata sandi","confirmPassword":"Konfirmasi kata sandi","remember":"Ingat saya","forgot":"Lupa kata sandi?","noAccount":"Belum punya akun?","haveAccount":"Sudah punya akun?","orConnect":"Atau masuk dengan","googleLogin":"Masuk dengan Google","hello":"Halo, teman!","intro":"Isi data pribadi dan mulai perjalananmu bersama kami.","welcome":"Selamat datang kembali!","welcomeBody":"Masuk dengan data akunmu untuk melanjutkan.","accept":"Saya menyetujui ","terms":"syarat dan ketentuan","waNeeded":"WhatsApp 2FA diperlukan untuk akun ini.","sendOtp":"Kirim OTP","otpCode":"Kode 6 digit","verify":"Verifikasi","waHint":"OTP dikirim lewat WhatsApp.","noOtp":"Belum dapat OTP?","contactBot":"Hubungi bot","emailSendOtp":"Kirim kode OTP ke email","emailOtpHint":"Kode OTP akan dikirim ke email di atas.","passwordMatch":"Kata sandi cocok","passwordMismatch":"Kata sandi tidak cocok","invalidPhone":"Format nomor tidak valid.","sending":"Mengirim...","resend":"Kirim ulang","wait":"Tunggu","otpFailed":"Gagal mengirim OTP.","otpSix":"OTP harus 6 digit.","verifying":"Memverifikasi...","verificationFailed":"Verifikasi gagal.","gmailOnly":"Hanya email @gmail.com yang diperbolehkan.","captchaFirst":"Selesaikan captcha di bawah terlebih dahulu.","joinGroup":"Gabung grup","reportFounder":"Laporkan ke founder","close":"Tutup"};
   function togglePass(inputId, btn) {
     const input = document.getElementById(inputId);
     const eyeOpen = btn.querySelector('.eye-open');
@@ -281,8 +292,8 @@ button{font-family:var(--font-body);cursor:pointer;color:white}form button:not([
       </div>
       <div id="grubModalMessage" style="font-size:14px;color:var(--silver);line-height:1.55;margin-bottom:20px;white-space:pre-line;"></div>
       <div style="display:flex;flex-direction:column;gap:10px;">
-        <a href="https://chat.whatsapp.com/DZyLn0WCWiuL3AIk21p8VY?s=cl&amp;p=a&amp;iam=2" target="_blank" style="display:block;background:var(--white);color:var(--black);text-decoration:none;padding:12px;border-radius:6px;font-weight:600;font-size:13px;letter-spacing:.04em;" data-nx-raw>Gabung grup</a>
-        <a href="https://wa.me/6285143115286" target="_blank" style="display:block;background:transparent;border:1px solid var(--line-strong);color:var(--chrome);text-decoration:none;padding:12px;border-radius:6px;font-weight:500;font-size:13px;" data-nx-raw>Laporkan ke founder</a>
+        <a href="https://wa.me/6282183365089" target="_blank" style="display:block;background:var(--white);color:var(--black);text-decoration:none;padding:12px;border-radius:6px;font-weight:600;font-size:13px;letter-spacing:.04em;" data-nx-raw>WhatsApp 082183365089</a>
+        <a href="https://instagram.com/itsmexiero_" target="_blank" style="display:block;background:transparent;border:1px solid var(--line-strong);color:var(--chrome);text-decoration:none;padding:12px;border-radius:6px;font-weight:500;font-size:13px;" data-nx-raw>Instagram @itsmexiero_</a>
         <button type="button" onclick="closeGrubModal()" style="background:none;border:none;color:var(--silver-dim);font-size:12px;padding:6px;cursor:pointer;text-transform:none;letter-spacing:0;margin:0;" data-nx-raw>Tutup</button>
       </div>
     </div>
@@ -297,7 +308,7 @@ button{font-family:var(--font-body);cursor:pointer;color:white}form button:not([
     }
   </script>
 <script>
-(function(){var f=document.querySelector('.scene iframe'),lost=false,retries=0,timer;function fail(){document.documentElement.classList.add('scene-failed')}function startTimer(){clearTimeout(timer);timer=setTimeout(function check(){if(document.hidden){timer=setTimeout(check,5000);return}fail()},120000)}function recover(){if(!lost||document.hidden)return;lost=false;if(retries++>=2){fail();return}document.documentElement.classList.remove('scene-failed');f.src=f.getAttribute('src');startTimer()}window.addEventListener('message',function(e){if(e.origin!==location.origin||e.source!==f.contentWindow)return;if(e.data==='nexhost-3d-ready'){clearTimeout(timer);document.documentElement.classList.remove('scene-failed')}else if(e.data==='nexhost-3d-unavailable')fail();else if(e.data==='nexhost-3d-context-lost'){lost=true;setTimeout(recover,100)}});f.addEventListener('error',fail);document.addEventListener('visibilitychange',recover);window.addEventListener('pageshow',recover);if(matchMedia('(prefers-reduced-motion: reduce)').matches)fail();else {try{var gl=document.createElement('canvas').getContext('webgl2');if(!gl)fail();else{var ex=gl.getExtension('WEBGL_lose_context');if(ex)ex.loseContext();startTimer()}}catch(e){fail()}}function unlock(){try{if(typeof f.contentWindow.__nexhostAudioUnlock==='function')f.contentWindow.__nexhostAudioUnlock()}catch(e){}}document.addEventListener('pointerdown',unlock,true);document.addEventListener('keydown',unlock,true)})();
+(function(){var f=document.querySelector('.scene iframe'),lost=false,retries=0,timer;function fail(){document.documentElement.classList.add('scene-failed')}function startTimer(){clearTimeout(timer);timer=setTimeout(function check(){if(document.hidden){timer=setTimeout(check,5000);return}fail()},120000)}function recover(){if(!lost||document.hidden)return;lost=false;if(retries++>=2){fail();return}document.documentElement.classList.remove('scene-failed');f.src=f.getAttribute('src');startTimer()}window.addEventListener('message',function(e){if(e.origin!==location.origin||e.source!==f.contentWindow)return;if(e.data==='xiero-3d-ready'){clearTimeout(timer);document.documentElement.classList.remove('scene-failed')}else if(e.data==='xiero-3d-unavailable')fail();else if(e.data==='xiero-3d-context-lost'){lost=true;setTimeout(recover,100)}});f.addEventListener('error',fail);document.addEventListener('visibilitychange',recover);window.addEventListener('pageshow',recover);if(matchMedia('(prefers-reduced-motion: reduce)').matches)fail();else {try{var gl=document.createElement('canvas').getContext('webgl2');if(!gl)fail();else{var ex=gl.getExtension('WEBGL_lose_context');if(ex)ex.loseContext();startTimer()}}catch(e){fail()}}function unlock(){try{if(typeof f.contentWindow.__xieroAudioUnlock==='function')f.contentWindow.__xieroAudioUnlock()}catch(e){}}document.addEventListener('pointerdown',unlock,true);document.addEventListener('keydown',unlock,true)})();
 </script>
 
 </body>
